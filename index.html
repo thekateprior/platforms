@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reading the Interface · How Social Media Design Produces Norms</title>
+  <meta name="description" content="An interactive learning site for UCF ENG 3623 (Social Media Research): read Reddit, Pinterest/Instagram, and Tumblr interfaces as discourse using Stanfill's discursive interface analysis." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#labs">Skip to the interface labs</a>
+
+  <!-- ============================ HERO ============================ -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow">UCF · ENG 3623 · Social Media Research</p>
+      <h1>Reading the Interface</h1>
+      <p class="lede">
+        An interface is not a neutral window onto content — it is <em>discourse</em>. Its buttons, menus, and
+        layouts quietly build one way of participating into the &ldquo;correct&rdquo; one: the
+        <strong>path of least resistance</strong>. This site lets you <em>use</em> three social platforms and then
+        <em>reveal the discourse</em> hidden in their design.
+      </p>
+      <p class="how-to">
+        <span class="kbd-hint">▸</span> Interact with each mock interface below, then flip
+        <strong>&ldquo;Reveal the discourse&rdquo;</strong> to see how each affordance produces a norm — and which
+        scholar named it.
+      </p>
+      <nav class="jump" aria-label="Jump to a platform">
+        <a href="#method">The method</a>
+        <a href="#reddit">Reddit</a>
+        <a href="#pinsta">Pinterest · Instagram</a>
+        <a href="#tumblr">Tumblr</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================ METHOD PRIMER ============================ -->
+  <section class="method" id="method" aria-labelledby="method-h">
+    <div class="wrap">
+      <h2 id="method-h">The lens: <span>discursive interface analysis</span></h2>
+      <p class="section-intro">
+        Mel Stanfill argues that web interfaces are a form of <strong>productive power</strong> — power measured
+        not by what it forbids but by &ldquo;what it incites, encourages, or produces.&rdquo; To analyze an interface
+        is to read its <em>functionalities, menu options, and page layouts</em> for the user, the use, and the values
+        they quietly make normal.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>Productive power</h3>
+          <p>Design doesn&rsquo;t just block things. It <em>invites</em> some actions and makes others unthinkable.
+            A &ldquo;yes&rdquo; encodes power as much as a &ldquo;no.&rdquo;</p>
+          <p class="cite">Stanfill 2014</p>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>Path of least resistance</h3>
+          <p>Every layout builds one option as the obvious, effortless, &ldquo;correct&rdquo; move. That default is
+            the norm the interface is teaching you.</p>
+          <p class="cite">Stanfill 2014</p>
+        </article>
+        <article class="card">
+          <span class="card-num">03</span>
+          <h3>What to read</h3>
+          <p>Buttons and verbs (vote, save, reblog), menus and categories, and the spatial hierarchy of the page —
+            each scripts a different <em>ideal user</em>.</p>
+          <p class="cite">Stanfill 2014</p>
+        </article>
+      </div>
+      <p class="thesis">
+        Below, the same analytic lens is turned on three platforms. Notice how each one scripts a
+        <strong>different ideal user</strong> — the <em>ranked contributor</em>, the <em>curator</em>, the
+        <em>remixing fan</em> — through nothing more than which action is easiest to take.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ LABS ============================ -->
+  <main id="labs">
+
+    <!-- ---------- REDDIT ---------- -->
+    <section class="lab lab--reddit" id="reddit" aria-labelledby="reddit-h" data-platform="reddit">
+      <div class="wrap">
+        <div class="lab-head">
+          <div>
+            <p class="lab-kicker">Interface 01 · deliberative &amp; agonistic</p>
+            <h2 id="reddit-h">Reddit</h2>
+          </div>
+          <button class="reveal-toggle" type="button" aria-pressed="false" data-reveal="reddit">
+            <span class="reveal-dot" aria-hidden="true"></span>
+            <span class="reveal-label">Reveal the discourse</span>
+          </button>
+        </div>
+
+        <p class="ideal-strip">
+          <span><b>Ideal user</b> the ranked contributor</span>
+          <span><b>Primary verb</b> vote &amp; argue</span>
+          <span><b>Unit of value</b> karma</span>
+          <span><b>Publicness</b> pseudonymous, searchable, persistent</span>
+        </p>
+
+        <div class="stage" data-stage="reddit">
+          <!-- mock UI -->
+          <div class="ui ui-reddit" role="group" aria-label="Reddit interface recreation">
+            <div class="rd-banner"></div>
+            <div class="rd-topbar">
+              <div class="rd-community">
+                <span class="rd-avatar" aria-hidden="true">r/</span>
+                <div>
+                  <h3 class="rd-sub">r/CozyGamers</h3>
+                  <p class="rd-meta">158k members · 26 online</p>
+                </div>
+              </div>
+              <button class="rd-join" type="button">Join</button>
+              <span class="hotspot" data-hs="reddit-join" hidden>1</span>
+            </div>
+
+            <div class="rd-body">
+              <div class="rd-feed">
+                <article class="rd-post">
+                  <div class="rd-vote">
+                    <button class="rd-up" type="button" aria-label="Upvote this post">▲</button>
+                    <span class="rd-score" data-score="128">128</span>
+                    <button class="rd-down" type="button" aria-label="Downvote this post">▼</button>
+                    <span class="hotspot" data-hs="reddit-vote" hidden>2</span>
+                  </div>
+                  <div class="rd-content">
+                    <p class="rd-byline">Posted by <a href="#reddit">u/OreoYip</a> · 6 hr ago</p>
+                    <h4 class="rd-title">I added more absorb abilities to my adorable little game</h4>
+                    <p class="rd-tag">🌱 In Development</p>
+                    <div class="rd-thumb" aria-hidden="true"></div>
+                    <div class="rd-actions">
+                      <button class="rd-action" type="button" data-comments>💬 <span data-count="69">69</span> Comments</button>
+                      <button class="rd-action" type="button">↗ Share</button>
+                      <button class="rd-action rd-report" type="button">⚑ Report</button>
+                      <span class="hotspot" data-hs="reddit-report" hidden>4</span>
+                    </div>
+                    <div class="rd-thread" data-thread hidden>
+                      <div class="rd-comment">
+                        <p class="rd-byline"><a href="#reddit">u/themiddyd</a> · 3 hr ago</p>
+                        <p>The absorb animation is so satisfying. How did you tune the timing?</p>
+                        <div class="rd-vote rd-vote--mini">
+                          <button class="rd-up" type="button" aria-label="Upvote comment">▲</button>
+                          <span class="rd-score" data-score="14">14</span>
+                          <button class="rd-down" type="button" aria-label="Downvote comment">▼</button>
+                        </div>
+                      </div>
+                      <div class="rd-comment rd-comment--nested">
+                        <p class="rd-byline"><a href="#reddit">u/OreoYip</a> (OP) · 2 hr ago</p>
+                        <p>Trial and error mostly — reblogged a devlog with the curve if you want it.</p>
+                      </div>
+                      <span class="hotspot" data-hs="reddit-thread" hidden>3</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <aside class="rd-side" aria-label="Community rules">
+                <h4>Rules</h4>
+                <ol class="rd-rules">
+                  <li>Only Cozy, Aesthetic, or Relaxing Games</li>
+                  <li>Posting requirements</li>
+                  <li>Be Civil &amp; Follow Reddiquette</li>
+                  <li>No Game Spoilers</li>
+                </ol>
+                <span class="hotspot" data-hs="reddit-rules" hidden>5</span>
+              </aside>
+            </div>
+          </div>
+
+          <!-- annotation callouts (revealed) -->
+          <div class="annotations" data-annos="reddit" aria-live="polite"></div>
+        </div>
+
+        <p class="callout" data-callout="reddit" role="status" aria-live="polite" hidden></p>
+
+        <p class="reading">
+          Reddit&rsquo;s layout makes <strong>evaluation</strong> the easiest gesture: the very first control on every
+          post is a vote. Contribution is ranked, comments nest into arguments, and a sidebar of rules plus a
+          <em>Report</em> flag hand governance to the crowd. The interface scripts a <em>deliberative, competitive</em>
+          public whose currency is karma.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- PINTEREST / INSTAGRAM ---------- -->
+    <section class="lab lab--pinsta" id="pinsta" aria-labelledby="pinsta-h" data-platform="pinsta">
+      <div class="wrap">
+        <div class="lab-head">
+          <div>
+            <p class="lab-kicker">Interface 02 · curatorial &amp; affective</p>
+            <h2 id="pinsta-h">Pinterest · Instagram</h2>
+          </div>
+          <button class="reveal-toggle" type="button" aria-pressed="false" data-reveal="pinsta">
+            <span class="reveal-dot" aria-hidden="true"></span>
+            <span class="reveal-label">Reveal the discourse</span>
+          </button>
+        </div>
+
+        <p class="ideal-strip">
+          <span><b>Ideal user</b> the (gendered) curator</span>
+          <span><b>Primary verb</b> save &amp; like</span>
+          <span><b>Unit of value</b> saves + likes as data</span>
+          <span><b>Publicness</b> aspirational, visual, aggregated</span>
+        </p>
+
+        <div class="stage" data-stage="pinsta">
+          <div class="ui ui-pinsta" role="group" aria-label="Pinterest and Instagram interface recreation">
+            <div class="pn-search">
+              <span class="pn-logo" aria-hidden="true">◉</span>
+              <span class="pn-searchbox">Search for ideas…</span>
+              <span class="hotspot" data-hs="pinsta-search" hidden>1</span>
+            </div>
+            <div class="pn-chips" role="tablist" aria-label="Interest categories">
+              <button class="pn-chip is-active" type="button">Home decor</button>
+              <button class="pn-chip" type="button">Recipes</button>
+              <button class="pn-chip" type="button">Weddings</button>
+              <button class="pn-chip" type="button">Fashion</button>
+              <button class="pn-chip" type="button">DIY</button>
+              <span class="hotspot" data-hs="pinsta-chips" hidden>2</span>
+            </div>
+
+            <div class="pn-grid" data-grid>
+              <!-- pins injected/enhanced by JS; static fallback below -->
+              <figure class="pin" data-tall>
+                <div class="pin-img pin-img--a" aria-hidden="true"></div>
+                <figcaption>
+                  <button class="pin-like" type="button" aria-label="Like this pin"><span class="heart">♡</span> <span class="pin-likes" data-likes="1204">1,204</span></button>
+                  <button class="pin-save" type="button">Save</button>
+                </figcaption>
+              </figure>
+              <figure class="pin">
+                <div class="pin-img pin-img--b" aria-hidden="true"></div>
+                <figcaption>
+                  <button class="pin-like" type="button" aria-label="Like this pin"><span class="heart">♡</span> <span class="pin-likes" data-likes="842">842</span></button>
+                  <button class="pin-save" type="button">Save</button>
+                </figcaption>
+                <span class="hotspot" data-hs="pinsta-save" hidden>3</span>
+              </figure>
+              <figure class="pin" data-tall>
+                <div class="pin-img pin-img--c" aria-hidden="true"></div>
+                <figcaption>
+                  <button class="pin-like" type="button" aria-label="Like this pin"><span class="heart">♡</span> <span class="pin-likes" data-likes="3110">3,110</span></button>
+                  <button class="pin-save" type="button">Save</button>
+                </figcaption>
+                <span class="hotspot" data-hs="pinsta-like" hidden>4</span>
+              </figure>
+              <figure class="pin">
+                <div class="pin-img pin-img--d" aria-hidden="true"></div>
+                <figcaption>
+                  <button class="pin-like" type="button" aria-label="Like this pin"><span class="heart">♡</span> <span class="pin-likes" data-likes="567">567</span></button>
+                  <button class="pin-save" type="button">Save</button>
+                </figcaption>
+              </figure>
+              <figure class="pin" data-tall>
+                <div class="pin-img pin-img--e" aria-hidden="true"></div>
+                <figcaption>
+                  <button class="pin-like" type="button" aria-label="Like this pin"><span class="heart">♡</span> <span class="pin-likes" data-likes="2038">2,038</span></button>
+                  <button class="pin-save" type="button">Save</button>
+                </figcaption>
+              </figure>
+              <figure class="pin">
+                <div class="pin-img pin-img--f" aria-hidden="true"></div>
+                <figcaption>
+                  <button class="pin-like" type="button" aria-label="Like this pin"><span class="heart">♡</span> <span class="pin-likes" data-likes="915">915</span></button>
+                  <button class="pin-save" type="button">Save</button>
+                </figcaption>
+              </figure>
+            </div>
+            <p class="pn-tags"><span>#cozyhome</span> <span>#slowliving</span> <span>#inspo</span>
+              <span class="hotspot" data-hs="pinsta-tags" hidden>5</span></p>
+          </div>
+
+          <div class="annotations" data-annos="pinsta" aria-live="polite"></div>
+        </div>
+
+        <p class="callout" data-callout="pinsta" role="status" aria-live="polite" hidden></p>
+
+        <p class="reading">
+          The grid puts <strong>images first and text last</strong>, and the two easy verbs are <em>save</em> and
+          <em>like</em> — you <em>curate</em> rather than create, and your affect is instantly counted. Friz &amp; Gehl
+          show how a sign-up of feminized interest categories scripts a <em>feminine curator</em>; Gerlitz &amp;
+          Helmond show how each like becomes a metric in a <em>like economy</em>. The norm: cooperate, collect, feel —
+          in numbers.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- TUMBLR ---------- -->
+    <section class="lab lab--tumblr" id="tumblr" aria-labelledby="tumblr-h" data-platform="tumblr">
+      <div class="wrap">
+        <div class="lab-head">
+          <div>
+            <p class="lab-kicker">Interface 03 · transformative &amp; fannish</p>
+            <h2 id="tumblr-h">Tumblr</h2>
+          </div>
+          <button class="reveal-toggle" type="button" aria-pressed="false" data-reveal="tumblr">
+            <span class="reveal-dot" aria-hidden="true"></span>
+            <span class="reveal-label">Reveal the discourse</span>
+          </button>
+        </div>
+
+        <p class="ideal-strip">
+          <span><b>Ideal user</b> the remixing fan</span>
+          <span><b>Primary verb</b> reblog &amp; tag</span>
+          <span><b>Unit of value</b> notes</span>
+          <span><b>Publicness</b> spreadable, affective, multiple</span>
+        </p>
+
+        <div class="stage" data-stage="tumblr">
+          <div class="ui ui-tumblr" role="group" aria-label="Tumblr interface recreation">
+            <div class="tm-bar">
+              <span class="tm-logo">tumblr</span>
+              <div class="tm-types" aria-label="Post types">
+                <span>Text</span><span>Photo</span><span>Quote</span><span>Link</span><span>Chat</span><span>Audio</span><span>Video</span>
+              </div>
+              <span class="hotspot" data-hs="tumblr-types" hidden>1</span>
+            </div>
+
+            <article class="tm-post">
+              <p class="tm-reblog-line"><a href="#tumblr">gpoy-theme</a> reblogged <a href="#tumblr">skywardcas</a></p>
+              <div class="tm-art" aria-hidden="true">
+                <span class="tm-art-top">I made Tumblr</span>
+                <span class="tm-art-bottom">Bitches love Tumblr</span>
+              </div>
+              <p class="tm-src"><a href="#tumblr">skywardcas</a>: NUMBER ONE RULE OF TUMBLR. ALWAYS REBLOG THE CREATOR.</p>
+
+              <p class="tm-tags" data-tags>#this is the post · #fandom · #reblog culture · #tag as commentary
+                <span class="hotspot" data-hs="tumblr-tags" hidden>3</span></p>
+
+              <div class="tm-notes">
+                <span class="tm-note-count"><b data-notes="410498">410,498</b> notes</span>
+                <div class="tm-actions">
+                  <button class="tm-action" type="button" aria-label="Reply">💬</button>
+                  <button class="tm-action tm-reblog" type="button" aria-label="Reblog this post">⟳ Reblog</button>
+                  <button class="tm-action tm-like" type="button" aria-label="Like this post">♡</button>
+                  <span class="hotspot" data-hs="tumblr-reblog" hidden>2</span>
+                </div>
+              </div>
+
+              <ul class="tm-chain" data-chain aria-label="Reblog chain">
+                <li><a href="#tumblr">skywardcas</a> <span>posted this</span></li>
+                <li><a href="#tumblr">gpoy-theme</a> <span>reblogged this and added: &ldquo;iconic&rdquo;</span></li>
+                <span class="hotspot" data-hs="tumblr-chain" hidden>4</span>
+              </ul>
+            </article>
+          </div>
+
+          <div class="annotations" data-annos="tumblr" aria-live="polite"></div>
+        </div>
+
+        <p class="callout" data-callout="tumblr" role="status" aria-live="polite" hidden></p>
+
+        <p class="reading">
+          There is no vote and no clean &ldquo;original&rdquo; view — the easy move is <strong>reblog</strong>, which
+          copies a post onto your blog and adds you to a growing <em>chain of notes</em>. Tags act as sideways
+          commentary rather than search terms. The interface scripts a <em>transformative, fannish</em> public where
+          value is <em>circulation</em>: Highfield, Harrington &amp; Bruns&rsquo; affective <em>audiencing</em>, made
+          the default gesture.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <h2>Sources</h2>
+      <p class="foot-intro">Every annotation above ties an affordance to one of these readings from the ENG 3623
+        &ldquo;Interpreting Social Media Interfaces&rdquo; unit.</p>
+      <ol class="refs">
+        <li>Baym, Nancy K., and danah boyd. &ldquo;Socially Mediated Publicness: An Introduction.&rdquo;
+          <cite>Journal of Broadcasting &amp; Electronic Media</cite> 56, no. 3 (2012): 320&ndash;29.</li>
+        <li>Crawford, Kate, and Tarleton Gillespie. &ldquo;What Is a Flag for? Social Media Reporting Tools and the
+          Vocabulary of Complaint.&rdquo; <cite>New Media &amp; Society</cite> 18, no. 3 (2016): 410&ndash;28.</li>
+        <li>Friz, Amanda, and Robert W. Gehl. &ldquo;Pinning the Feminine User: Gender Scripts in Pinterest&rsquo;s
+          Sign-up Interface.&rdquo; <cite>Media, Culture &amp; Society</cite> 38, no. 5 (2016): 686&ndash;703.</li>
+        <li>Gerlitz, Carolin, and Anne Helmond. &ldquo;The Like Economy: Social Buttons and the Data-Intensive
+          Web.&rdquo; <cite>New Media &amp; Society</cite> 15, no. 8 (2013): 1348&ndash;65.</li>
+        <li>Highfield, Tim, Stephen Harrington, and Axel Bruns. &ldquo;Twitter as a Technology for Audiencing and
+          Fandom.&rdquo; <cite>Information, Communication &amp; Society</cite> 16, no. 3 (2013): 315&ndash;39.</li>
+        <li>Stanfill, Mel. &ldquo;The Interface as Discourse: The Production of Norms through Web Design.&rdquo;
+          <cite>New Media &amp; Society</cite> 17, no. 7 (2015): 1059&ndash;74.</li>
+      </ol>
+      <p class="foot-note">
+        Built for <strong>UCF ENG 3623 · Social Media Research</strong>. Interfaces are original, non-branded
+        recreations for educational analysis; platform names belong to their owners.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
