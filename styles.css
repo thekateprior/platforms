@@ -357,11 +357,10 @@ a { color: var(--accent); }
 .tm-post { background: #fff; color: var(--ink); margin: 1rem; border-radius: 8px; overflow: hidden; }
 .tm-reblog-line { margin: 0; padding: .7rem .9rem; font-size: .84rem; color: var(--ink-soft); background: #f3f5f8; }
 .tm-reblog-line a { font-weight: 800; text-decoration: none; color: var(--tumblr); }
-.tm-art {
-  height: 220px; background: linear-gradient(160deg,#3a3f4a,#20242c); color: #fff;
-  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-  padding: 1.4rem 1rem; text-align: center; font-weight: 900; font-size: 1.6rem; text-shadow: 0 2px 8px rgba(0,0,0,.5);
-}
+.tm-body { padding: 1.1rem 1rem .4rem; }
+.tm-op { margin: 0 0 .5rem; font-weight: 800; font-size: .9rem; }
+.tm-op a { color: var(--tumblr); text-decoration: none; }
+.tm-text { margin: 0; font-size: 1.15rem; line-height: 1.5; color: var(--ink); }
 .tm-src { margin: 0; padding: .8rem .9rem; font-size: .88rem; border-bottom: 1px solid var(--line); }
 .tm-src a { font-weight: 800; color: var(--tumblr); text-decoration: none; }
 .tm-tags { position: relative; margin: 0; padding: .7rem .9rem; color: #5a7ca0; font-size: .84rem; font-weight: 600; }
